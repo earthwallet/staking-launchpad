@@ -379,6 +379,9 @@
   "58PXVy": {
     "message": "Why two keys instead of one?"
   },
+  "58kW4a": {
+    "message": "Become a validator and help secure the future of Earth Ether."
+  },
   "5A6amM": {
     "message": "It is high risk to run your validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
   },
@@ -1148,6 +1151,9 @@
   },
   "KwfNme": {
     "message": "Configure Besu"
+  },
+  "KwlpDa": {
+    "message": "Become a validator and help secure the future of Earth Ether"
   },
   "KxUgHu": {
     "description": "{boldCaution} is states 'only stored on one validator machine', a bolded caution statement to users",
@@ -1954,9 +1960,6 @@
   },
   "cJX99/": {
     "message": "Check your favorite Beacon Chain block explorer:"
-  },
-  "cPsIkp": {
-    "message": "Become a validator and help secure the future of Ethereum."
   },
   "cRzxes": {
     "message": "Current APR"
@@ -2932,9 +2935,6 @@
   },
   "vEJDo8": {
     "message": "Protect your funds using monitoring software, and learn how to handle different real world scenarios."
-  },
-  "vIF140": {
-    "message": "Become a validator and help secure the future of Ethereum"
   },
   "vJez0K": {
     "message": "Proceed with caution. Our on-chain data source is down and we are unable to flag any double deposits."

@@ -11,12 +11,12 @@ export const grommetTheme = {
       outline: 'none',
     },
     colors: {
-      brand: blue.dark, // needed to override default grommet component styling
+      brand: blue.lightest, // needed to override default grommet component styling
       border: gray.light,
 
       blueLight: blue.light,
       blueMedium: blue.medium,
-      blueDark: blue.dark,
+      blueDark: blue.light,
 
       greenLight: green.light,
       greenMedium: green.medium,
@@ -33,7 +33,7 @@ export const grommetTheme = {
       yellowDark: yellow.dark,
     },
     font: {
-      family: 'Roboto',
+      family: 'Poppins',
     },
   },
   button: {

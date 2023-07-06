@@ -21,8 +21,8 @@ interface mobile {
 const RainbowBackground = styled.div`
   min-width: 100%;
   overflow: hidden;
-  background-image: ${p =>
-    `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight})`};
+  background: ${p => p.theme.baseColor};
+  background-image: url('https://global-uploads.webflow.com/61894f80c922ad33474c2208/61898d2327fbca15fa815d5e_background-pattern.svg');
   min-height: ${(p: mobile) => p.isMobile && 'calc(100vh - 20px)'};
 `;
 const MainContainer = styled.div`
@@ -184,11 +184,11 @@ export const Hero = () => {
                       color="brand"
                       className="my20"
                     >
-                      <FormattedMessage defaultMessage="Become a validator and help secure the future of Ethereum" />
+                      <FormattedMessage defaultMessage="Become a validator and help secure the future of Earth Ether" />
                     </Heading>
                   </ScrollAnimation>
                   <ScrollAnimation animateIn="fadeInUp" delay={750} animateOnce>
-                    <Text className="mt25">
+                    <Text color="blueLight" className="mt25">
                       <FormattedMessage defaultMessage="Earn continuous rewards for providing a public good to the community." />
                     </Text>
                   </ScrollAnimation>

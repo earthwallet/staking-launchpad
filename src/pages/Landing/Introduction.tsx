@@ -8,9 +8,7 @@ import { Text } from '../../components/Text';
 import { Heading } from '../../components/Heading';
 import { Link } from '../../components/Link';
 
-const Container = styled.div`
-  background: ${p => p.theme.white};
-`;
+const Container = styled.div``;
 const SubContainer = styled.div`
   position: relative;
   box-sizing: border-box;
@@ -65,7 +63,7 @@ export const Introduction = (): JSX.Element => {
         </ImgContainer>
         <ContentContainer>
           <ScrollAnimation animateIn="fadeIn" animateOnce>
-            <Heading level={2} size="medium" color="blueDark" margin="none">
+            <Heading level={2} size="medium" color="blueLight" margin="none">
               <FormattedMessage defaultMessage="Validators and Ethereum" />
             </Heading>
           </ScrollAnimation>
