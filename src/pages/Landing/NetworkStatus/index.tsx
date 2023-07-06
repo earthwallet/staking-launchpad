@@ -12,7 +12,6 @@ import { BEACONCHAIN_URL, TICKER_NAME } from '../../../utils/envVars';
 // Styled Components
 
 const Container = styled.div`
-  background-color: ${p => p.theme.green.light};
   position: relative;
   padding: ${(p: { isMobile: boolean }) => (p.isMobile ? '64px 0' : '124px 0')};
 `;
@@ -39,7 +38,9 @@ const Card = styled.div`
   border-radius: 4px;
   width: 100%;
   margin: 16px;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -103,7 +104,7 @@ export const NetworkStatus: React.FC<{
     <Container isMobile={m}>
       <ScrollAnimation delay={750} animateIn="fadeIn" animateOnce>
         <Content isMobile={m}>
-          <Heading level={2} size="medium" color="blueDark" className="mb40">
+          <Heading level={2} size="medium" className="mb40">
             <FormattedMessage defaultMessage="The Beacon Chain" />
           </Heading>
           <CardContainer>

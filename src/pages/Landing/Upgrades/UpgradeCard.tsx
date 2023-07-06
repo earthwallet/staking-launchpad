@@ -5,7 +5,9 @@ import { Text } from '../../../components/Text';
 import { Link } from '../../../components/Link';
 
 const Container = styled.div`
-  background-color: ${p => p.theme.purple.medium};
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: ${p => p.theme.borderRadius};

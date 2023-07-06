@@ -12,11 +12,12 @@ const Rhino = styled.span`
   font-size: 20px;
 `;
 
-const RainbowBackground = styled.div`
+const FooterBackground = styled.div`
   min-width: 100%;
   overflow: hidden;
-  background-image: ${p =>
-    `radial-gradient(circle at 100% -80%, ${p.theme.rainbowLight})`};
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 `;
 
 const FooterStyles = styled.div`
@@ -65,7 +66,7 @@ export const Footer = () => {
   ];
 
   return (
-    <RainbowBackground>
+    <FooterBackground>
       <FooterStyles>
         <div className="col">
           <Heading level={4}>
@@ -131,6 +132,6 @@ export const Footer = () => {
           </Link>
         </div>
       </FooterStyles>
-    </RainbowBackground>
+    </FooterBackground>
   );
 };

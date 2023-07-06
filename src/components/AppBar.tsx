@@ -6,7 +6,7 @@ import { Box, DropButton } from 'grommet';
 import { Menu, Language, FormDown } from 'grommet-icons';
 import { useWeb3React } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
-import EthDiamond from '../static/eth-diamond-plain.svg';
+import EthDiamond from '../static/earthether.png';
 import { web3ReactInterface } from '../pages/ConnectWallet';
 import {
   AllowedELNetworks,
@@ -34,9 +34,7 @@ const HomeLink = styled(Link)`
   gap: 5px;
 `;
 
-const RainbowBackground = styled(Box)`
-  background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
-`;
+const Background = styled(Box)``;
 
 const EthLogo = styled.img`
   height: 40px;
@@ -186,7 +184,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
     [locale]
   );
   return (
-    <RainbowBackground
+    <Background
       tag="header"
       direction="row"
       align="center"
@@ -468,7 +466,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           </DotDropdownBox>
         )}
       </NavLinksRight>
-    </RainbowBackground>
+    </Background>
   );
 };
 
