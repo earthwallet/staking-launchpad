@@ -150,8 +150,7 @@ const _Routes = () => {
 
   const title = formatMessage({ defaultMessage: 'Staking Launchpad' });
   const description = formatMessage({
-    defaultMessage:
-      'Become a validator and help secure the future of Earth Ether.',
+    defaultMessage: 'Become a validator of Earth Ether.',
   });
   return (
     <>

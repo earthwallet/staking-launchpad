@@ -1057,12 +1057,6 @@
       "value": "Why two keys instead of one?"
     }
   ],
-  "58kW4a": [
-    {
-      "type": 0,
-      "value": "Become a validator and help secure the future of Earth Ether."
-    }
-  ],
   "5A6amM": [
     {
       "type": 0,
@@ -1851,6 +1845,12 @@
       "value": "Top up validator"
     }
   ],
+  "Awp6yS": [
+    {
+      "type": 0,
+      "value": "Become a validator of Earth Ether."
+    }
+  ],
   "BCsPjJ": [
     {
       "type": 0,
@@ -1949,6 +1949,12 @@
     {
       "type": 0,
       "value": "How to trigger withdrawals, credential change"
+    }
+  ],
+  "Bqctgr": [
+    {
+      "type": 0,
+      "value": "Become a validator of Earth Ether"
     }
   ],
   "Bxe+HB": [
@@ -3005,12 +3011,6 @@
     {
       "type": 0,
       "value": "Configure Besu"
-    }
-  ],
-  "KwlpDa": [
-    {
-      "type": 0,
-      "value": "Become a validator and help secure the future of Earth Ether"
     }
   ],
   "KxUgHu": [
