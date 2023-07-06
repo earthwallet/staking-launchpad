@@ -2,7 +2,6 @@
   "name": "staking-launchpad",
   "version": "1.0.1",
   "private": true,
-  "homepage": "https://earthwallet.github.io/staking-launchpad",
   "dependencies": {
     "@chainsafe/bls": "^2.0.0",
     "@chainsafe/ssz": "^0.6.7",
@@ -112,9 +111,7 @@
     "test": "rescripts test",
     "eject": "rescripts eject",
     "extract": "formatjs extract 'src/**/*.{t,j}sx' --out-file src/intl/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]' --format crowdin",
-    "compile": "formatjs compile src/intl/en.json --format crowdin --out-file src/intl/compiled/en.json --ast",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "compile": "formatjs compile src/intl/en.json --format crowdin --out-file src/intl/compiled/en.json --ast"
   },
   "eslintConfig": {
     "extends": "react-app"

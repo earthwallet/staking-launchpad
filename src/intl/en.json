@@ -379,9 +379,6 @@
   "58PXVy": {
     "message": "Why two keys instead of one?"
   },
-  "58kW4a": {
-    "message": "Become a validator and help secure the future of Earth Ether."
-  },
   "5A6amM": {
     "message": "It is high risk to run your validator in multiple places. It will lead to a slashable event and ejection from the network. {learnMore}"
   },
@@ -670,6 +667,9 @@
   "Aw1mMs": {
     "message": "Top up validator"
   },
+  "Awp6yS": {
+    "message": "Become a validator of Earth Ether."
+  },
   "BCsPjJ": {
     "message": "Start deposit process"
   },
@@ -712,6 +712,9 @@
   },
   "Bp9Dxf": {
     "message": "How to trigger withdrawals, credential change"
+  },
+  "Bqctgr": {
+    "message": "Become a validator of Earth Ether"
   },
   "Bxe+HB": {
     "message": "Genesis validator root"
@@ -1151,9 +1154,6 @@
   },
   "KwfNme": {
     "message": "Configure Besu"
-  },
-  "KwlpDa": {
-    "message": "Become a validator and help secure the future of Earth Ether"
   },
   "KxUgHu": {
     "description": "{boldCaution} is states 'only stored on one validator machine', a bolded caution statement to users",
