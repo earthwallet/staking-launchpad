@@ -115,6 +115,7 @@ const PortTable = styled.table`
 
   thead th {
     vertical-align: bottom;
+    color: white;
   }
 
   tbody + tbody {

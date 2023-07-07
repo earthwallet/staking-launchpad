@@ -55,7 +55,7 @@ export const TermsOfService = () => {
         <TermsOfServiceStyles>
           <Text
             size="12px"
-            color="grayDark"
+            color="grayLight"
             className="tos-text last-updated-text"
           >
             Page last updated: November 3, 2020

@@ -49,12 +49,13 @@ const ComponentStyles = styled.div`
   li {
     margin-top: 10px;
     font-weight: 300;
+    color: white;
   }
   strong {
     font-weight: 500;
   }
   section.actionable {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 2rem;
     @media only screen and (max-width: ${p => p.theme.screenSizes.medium}) {
       padding: 1rem;
@@ -86,7 +87,7 @@ const TableContainer = styled.div`
   table {
     margin: 1rem auto;
     * {
-      color: ${(p: any) => p.theme.blue.dark};
+      color: white;
       text-align: center;
     }
     th,
@@ -98,6 +99,7 @@ const TableContainer = styled.div`
 
     thead th {
       vertical-align: bottom;
+      color: white;
     }
 
     tbody + tbody {
