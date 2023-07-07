@@ -4,9 +4,9 @@ import { Text } from '../../components/Text';
 import { Link } from '../../components/Link';
 
 const Container = styled.div`
-  background-color: white;
-  box-shadow: -1px 2px 4px rgba(238, 238, 238, 0.5),
-    -1px 2px 2px rgba(222, 222, 222, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   max-width: 250px;
   border-radius: 5px;
 

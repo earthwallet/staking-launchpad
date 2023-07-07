@@ -34,11 +34,16 @@ const HomeLink = styled(Link)`
   gap: 5px;
 `;
 
-const Background = styled(Box)``;
+const Background = styled(Box)`
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+`;
 
 const EthLogo = styled.img`
-  height: 40px;
-  width: 40px;
+  height: 48px;
+  width: 48px;
 `;
 
 const NetworkText = styled.div`
@@ -51,6 +56,7 @@ const NetworkText = styled.div`
   justify-content: center;
   width: 100%;
   border-radius: 4px;
+  color: rgba(255, 255, 255, 0.7);
   &:hover {
     border-radius: 4px;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
@@ -240,7 +246,7 @@ const _AppBar = ({ location }: RouteComponentProps) => {
           }
           dropAlign={{ top: 'bottom', right: dropAlignInline }}
           dropContent={
-            <Box pad="medium">
+            <Box background={'#000'} pad="medium">
               <Text className="my10">
                 <b>Execution clients</b>
               </Text>

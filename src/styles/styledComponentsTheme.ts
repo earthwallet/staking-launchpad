@@ -17,8 +17,8 @@ export const colors = {
   },
   green: {
     light: '#F8FAF9',
-    medium: '#D0E1D5',
-    dark: '#26AB83',
+    medium: '#44A75A',
+    dark: '#55D171',
   },
   red: {
     lightest: '#fff0f2',

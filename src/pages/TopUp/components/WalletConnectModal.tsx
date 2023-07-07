@@ -100,8 +100,17 @@ const WalletConnectModal: React.FC<{
   if (active || !loading) return null;
 
   return (
-    <Layer>
-      <CloseButton onClick={handleModalClose}>
+    <Layer
+      style={{ background: 'rgba(0,0,0,0.80)', backdropFilter: 'blur(5px)' }}
+    >
+      <CloseButton
+        style={{
+          borderRadius: 100,
+          background: '#ffffff',
+          transform: 'scale(0.5)',
+        }}
+        onClick={handleModalClose}
+      >
         <Close src={closeGlyph} />
       </CloseButton>
       <Heading level={2} color="blueMedium" style={{ margin: '20px auto' }}>

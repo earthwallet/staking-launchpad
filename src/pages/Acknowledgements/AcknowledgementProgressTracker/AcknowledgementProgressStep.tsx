@@ -20,11 +20,12 @@ interface Props {
 const Container = styled.div`
   position: relative;
   display: flex;
-  background-color: white;
+  background-color: 'transparent';
   width: ${(p: Props) => (p.isActive ? '100%' : '235px')};
   margin: auto auto 25px;
+  backdrop-filter: blur(3px);
   border-radius: ${(p: { theme: any }) => p.theme.borderRadius};
-  border: 1px solid ${(p: Props) => p.theme.gray.medium};
+  border: 1px solid ${(p: Props) => p.theme.gray.dark};
   box-shadow: ${(p: Props) =>
     p.isActive
       ? '-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.3);\n' +
@@ -37,7 +38,8 @@ const Container = styled.div`
 const IndexContainer = styled.div`
   display: flex;
   justify-content: center;
-  background-color: ${(p: { theme: any }) => p.theme.gray.light};
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   padding: 10px 15px;
   height: 40px;
   width: 45px;
@@ -47,7 +49,7 @@ const IndexContainer = styled.div`
 
 const StyledText = styled(Text)`
   color: ${(p: Props) =>
-    p.disabled ? p.theme.gray.medium : p.theme.gray.dark};
+    p.disabled ? p.theme.gray.medium : p.theme.gray.lightest};
   font-weight: ${(p: Props) => (p.isActive ? 600 : 200)};
   font-size: 18px;
   line-height: 40px;
