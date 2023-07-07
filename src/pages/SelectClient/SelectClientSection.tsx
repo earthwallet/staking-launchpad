@@ -24,8 +24,8 @@ const ClientOptionContainer = styled.div<{ overFour: boolean }>`
 const ClientDescriptionContainer = styled.div`
   width: 100%;
   border-radius: 4px;
-  background: #fcfcfc;
-  border: 1px solid #ececec;
+  background: #fcfcfc0f;
+  border: 1px solid #ececec0f;
   margin-top: 30px;
   padding: 1rem 2rem;
 `;
@@ -52,7 +52,7 @@ const SelectClientSection = ({
       {title}
     </Heading>
     {ethClientStep === 'execution' && (
-      <div style={{ paddingBottom: '1rem' }}>
+      <div style={{ paddingBottom: '1rem', color: 'white' }}>
         <FormattedMessage
           defaultMessage="To process incoming validator deposits from the execution layer
           (formerly 'Eth1' chain), you'll need to run an execution client as well as your

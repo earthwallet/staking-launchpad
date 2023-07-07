@@ -6,7 +6,7 @@ import { rainbowColors } from '../../styles/styledComponentsTheme';
 import { WorkflowStep } from '../../store/actions/workflowActions';
 
 const Container = styled.div`
-  background-color: white;
+  background: #0f1726;
 `;
 
 const StepContainer = styled.div`
@@ -25,7 +25,7 @@ const Step = styled.div`
     theme: any;
   }) => {
     if (p.active) return rainbowColors[p.index];
-    return p.theme.gray.medium;
+    return 'white';
   }};
   font-weight: ${p => (p.active ? 600 : undefined)};
 `;

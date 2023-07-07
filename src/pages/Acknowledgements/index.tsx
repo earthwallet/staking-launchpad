@@ -68,6 +68,7 @@ const _AcknowledgementPage = ({
   const Subtitle = styled.p`
     font-size: 20px;
     margin-bottom: 32px;
+    color: white;
   `;
 
   const handleSubmit = () => {

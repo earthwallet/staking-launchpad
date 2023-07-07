@@ -13,10 +13,12 @@ export const Paper = (
   const { error, className, children, pad } = props;
   return (
     <Box
-      border={error ? { color: 'redLight', size: 'small' } : true}
+      border={
+        error ? { color: 'redLight', size: 'small' } : { color: '#4A4A4A' }
+      }
       className={className}
       pad={pad || 'large'}
-      background="white"
+      background="rgba(255,255,255,0.05)"
       round="xsmall"
       {...props}
     >

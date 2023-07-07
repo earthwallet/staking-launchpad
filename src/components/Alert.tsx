@@ -8,24 +8,28 @@ const variantStyles = {
     borderColor: '#b8daff',
   },
   warning: {
-    backgroundColor: '#fcf8e3',
-    borderColor: '#faebcc',
+    backgroundColor: '#ffdeb32e',
+    borderColor: '#DEB887',
+    color: 'white',
   },
   secondary: {
     backgroundColor: '#fdfcfe',
     borderColor: '#d3d3d3',
   },
   info: {
-    backgroundColor: '#d9edf7',
-    borderColor: '#bce8f1',
+    backgroundColor: '#d9edf72e',
+    borderColor: '#bce8f12e',
+    color: 'white',
   },
   error: {
-    backgroundColor: '#f2dede',
-    borderColor: '#ebccd1',
+    backgroundColor: '#f2dede2e',
+    borderColor: '#E22D3F2e',
+    color: 'white',
   },
   success: {
-    backgroundColor: '#d4edda',
+    backgroundColor: '#d4edda2e',
     borderColor: '#c3e6cb',
+    color: 'white',
   },
 };
 

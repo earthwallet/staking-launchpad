@@ -47,8 +47,8 @@ const StyledTabs = styled(Tabs)`
   section {
     margin-top: 10px !important;
     border-radius: 4px;
-    border: 1px solid ${p => p.theme.gray.light};
-    background: white;
+    border: 1px solid #4a4a4a;
+    background: rgba(255, 255, 255, 0.05);
     padding: 20px;
   }
 `;

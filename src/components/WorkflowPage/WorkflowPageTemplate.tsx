@@ -5,10 +5,6 @@ import { Heading } from '../Heading';
 import { WorkflowProgressBar } from './WorkflowProgressBar';
 import { AppBar } from '../AppBar';
 import { DesktopOnlyModal } from '../DesktopOnlyModal';
-import {
-  rainbowBGColors,
-  rainbowLightColors,
-} from '../../styles/styledComponentsTheme';
 import { routesEnum } from '../../Routes';
 import { WorkflowStep } from '../../store/actions/workflowActions';
 import { Helmet } from 'react-helmet';
@@ -27,10 +23,6 @@ const Gutter = styled.div`
   justify-content: center;
 `;
 const Background = styled.div`
-  background-image: ${(p: { workflowStep: WorkflowStep }) =>
-    `linear-gradient(to bottom right, ${rainbowLightColors[p.workflowStep]}, ${
-      rainbowBGColors[p.workflowStep]
-    });`};
   min-height: 100vh;
 `;
 
@@ -72,7 +64,7 @@ const _WorkflowPageTemplate = ({
   const calculatedWorkflowStep: WorkflowStep = mapPathnameToWorkflowStep(path);
 
   return (
-    <Background workflowStep={calculatedWorkflowStep}>
+    <Background>
       <Helmet>
         <title>{title}</title>
         <meta property="og:title" content={title} />

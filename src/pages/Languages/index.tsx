@@ -20,11 +20,14 @@ const LangItem = styled(Link)`
   width: 240px;
   list-style: none;
   border-radius: 2px;
-  border: 1px solid #000000;
+  border: 1px solid #4a4a4a;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
   &:hover {
     border-radius: 4px;
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
-    background-image: ${p => `linear-gradient(to right, ${p.theme.rainbow})`};
+    border-color: ${p => `${p.theme.blue.medium}`};
+    color: ${p => `${p.theme.blue.medium}`};
     transition: transform 0.1s;
     transform: scale(1.02);
   }
@@ -178,7 +181,7 @@ export const Languages = () => {
           );
         })}
       </LangContainer>
-      <p>
+      <p style={{ color: 'white' }}>
         <FormattedMessage
           defaultMessage="If you'd like to see the launchpad in another language, or if you can help translate, {getInTouch}!"
           values={{

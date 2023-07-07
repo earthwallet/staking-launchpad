@@ -33,7 +33,7 @@ import useIntlNetworkName from '../../hooks/useIntlNetworkName';
 
 const ChecklistPageStyles = styled.div`
   section {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 1rem;
     margin: 1rem;
     border-radius: 4px;
@@ -55,6 +55,7 @@ const ChecklistPageStyles = styled.div`
   ul {
     padding-inline-start: 0px;
     padding-top: 16px;
+    color: white;
   }
   @media screen and (max-width: 1080px) {
     section {
@@ -94,11 +95,12 @@ const ClientContainer = styled.div`
 const Subtitle = styled.p`
   font-size: 20px;
   margin-bottom: 32px;
+  color: white;
 `;
 
 const PortTable = styled.table`
   margin: 1rem auto;
-  color: #212529;
+  color: #fff;
 
   * {
     text-align: start;
@@ -140,6 +142,7 @@ const SectionHeader = styled.div`
 
 const Header = styled(SectionHeader as any)`
   margin: 3rem 1rem 1rem;
+  color: white;
 `;
 
 const CardContainer = styled.div`
@@ -156,7 +159,6 @@ const Card = styled.div`
   border: 1px solid ${p => p.theme.gray.dark};
   border-radius: 4px;
   width: 100%;
-  background: white;
   display: flex;
   align-items: center;
   width: 100%;
