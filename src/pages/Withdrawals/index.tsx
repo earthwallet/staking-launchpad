@@ -29,7 +29,7 @@ const ComponentStyles = styled.div`
   p,
   ol,
   ul {
-    color: ${(p: any) => p.theme.blue.dark};
+    color: white;
   }
   ul {
     margin-bottom: 10px;

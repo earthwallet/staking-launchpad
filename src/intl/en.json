@@ -443,6 +443,9 @@
   "793QlI": {
     "message": "{title} is not supported in offline mode."
   },
+  "7D453L": {
+    "message": "Upload deposit data 2 of 2"
+  },
   "7DFXQj": {
     "message": "Switch to {oppositeNetwork} launchpad"
   },
@@ -1022,6 +1025,9 @@
   },
   "IJw06E": {
     "message": "Sign transaction with your wallet"
+  },
+  "ISXrvR": {
+    "message": "Upload deposit data 1 of 2"
   },
   "IWlazt": {
     "message": "full withdrawal"
@@ -1952,6 +1958,10 @@
   "cE71F9": {
     "message": "[Example: {fork}]"
   },
+  "cFrti7": {
+    "description": "this is used as a command line flag, short for \"amount\"",
+    "message": "amount"
+  },
   "cHUoV9": {
     "message": "The Geth documentation explains how to download and install the client."
   },
@@ -1966,6 +1976,9 @@
   },
   "cU/ZP6": {
     "message": "Ethereum uses proof-of-stake to reach consensus."
+  },
+  "cXHsYt": {
+    "message": "Wait 3 hours"
   },
   "cav520": {
     "message": "Download from GitHub"
@@ -2041,9 +2054,6 @@
   },
   "e+9dMk": {
     "message": "Execution JWT docs:"
-  },
-  "e/PSgJ": {
-    "message": "Upload deposit data"
   },
   "e4f94H": {
     "description": "{code} values are terminal outputs and commands.",

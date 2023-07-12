@@ -24,7 +24,7 @@ const ComponentStyles = styled.div`
   p,
   ol,
   ul {
-    color: ${(p: any) => p.theme.blue.dark};
+    color: white;
   }
   li {
     font-weight: 300;
@@ -183,7 +183,7 @@ export const BtecGuide = () => {
                     <Link
                       primary
                       inline
-                      to="https://github.com/ethereum/staking-deposit-cli/releases"
+                      to="https://github.com/earthwallet/staking-deposit-cli/releases"
                     >
                       <FormattedMessage defaultMessage="Staking Deposit CLI releases" />
                     </Link>
@@ -205,7 +205,7 @@ export const BtecGuide = () => {
               />
             </Text>
             <CodeBlock>
-              git clone https://github.com/ethereum/staking-deposit-cli.git
+              git clone https://github.com/earthwallet/staking-deposit-cli.git
             </CodeBlock>
             <Text className="mb10">
               <FormattedMessage defaultMessage="Install and set virtualenv:" />
@@ -255,7 +255,7 @@ export const BtecGuide = () => {
                     <Link
                       primary
                       inline
-                      to="https://github.com/ethereum/staking-deposit-cli#step-2-create-keys-and-deposit_data-json-2"
+                      to="https://github.com/earthwallet/staking-deposit-cli#step-2-create-keys-and-deposit_data-json-2"
                     >
                       <FormattedMessage defaultMessage="docs" />
                     </Link>
@@ -279,7 +279,7 @@ export const BtecGuide = () => {
                       <Link
                         primary
                         inline
-                        to="https://github.com/ethereum/staking-deposit-cli/blob/bls-to-execution-change/README.md#generate-bls-to-execution-change-arguments"
+                        to="https://github.com/earthwallet/staking-deposit-cli/blob/bls-to-execution-change/README.md#generate-bls-to-execution-change-arguments"
                       >
                         <FormattedMessage defaultMessage="docs of full arguments here" />
                       </Link>
