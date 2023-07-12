@@ -24,7 +24,7 @@ const Step = styled.div`
     index: number;
     theme: any;
   }) => {
-    if (p.active) return rainbowColors[p.index];
+    if (p.active) return rainbowColors[0];
     return 'white';
   }};
   font-weight: ${p => (p.active ? 600 : undefined)};
@@ -61,11 +61,19 @@ export const WorkflowProgressBar = ({ workflow }: Props): JSX.Element => {
     },
     {
       step: WorkflowStep.UPLOAD_VALIDATOR_FILE,
-      text: formatMessage({ defaultMessage: 'Upload deposit data' }),
+      text: formatMessage({ defaultMessage: 'Upload deposit data 1 of 2' }),
     },
     {
       step: WorkflowStep.CONNECT_WALLET,
       text: formatMessage({ defaultMessage: 'Connect wallet' }),
+    },
+    {
+      step: WorkflowStep.WAIT_3_HRS,
+      text: formatMessage({ defaultMessage: 'Wait 3 hours' }),
+    },
+    {
+      step: WorkflowStep.UPLOAD_VALIDATOR_FILE_STEP_2,
+      text: formatMessage({ defaultMessage: 'Upload deposit data 2 of 2' }),
     },
     {
       step: WorkflowStep.SUMMARY,

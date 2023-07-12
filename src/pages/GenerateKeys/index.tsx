@@ -212,50 +212,52 @@ const _GenerateKeysPage = ({
           </div>
         </NumValidatorContainer>
       </Paper>
-      <Paper className="mt20">
-        <Heading level={2} size="small" color="blueMedium" className="mb20">
-          <FormattedMessage defaultMessage="Withdrawal address" />
-        </Heading>
-        <Text className="mb20">
-          <FormattedMessage
-            defaultMessage="You may choose to provide a withdrawal address with your initial
+      {false && (
+        <Paper className="mt20">
+          <Heading level={2} size="small" color="blueMedium" className="mb20">
+            <FormattedMessage defaultMessage="Withdrawal address" />
+          </Heading>
+          <Text className="mb20">
+            <FormattedMessage
+              defaultMessage="You may choose to provide a withdrawal address with your initial
             deposit to automatically enable reward payments and also the ability to fully
             exit your funds at anytime (recommended). This address should be to a regular
             Ethereum address and will be the only address funds can be sent to from your new
             validator accounts, and cannot be changed once chosen."
-          />
-        </Text>
-        <Text className="mb20">
-          <FormattedMessage
-            defaultMessage="Paste your chosen address here to include it in the copy/paste CLI
-            command below:"
-          />
-        </Text>
-        <AddressInputContainer className="mb40">
-          <AddressInput
-            onChange={handleAddressChange}
-            value={withdrawalAddress}
-            placeholder="0x..."
-            maxLength={42}
-          />
-          <AddressIndicator>{addressIndicatorEmoji}</AddressIndicator>
-        </AddressInputContainer>
-        <Alert variant="error">
-          {isValidWithdrawalAddress ? (
-            <FormattedMessage
-              defaultMessage="Make sure you have control over this address as this cannot be changed.
-              Providing an account from a centralized exchange is not recommended."
             />
-          ) : (
+          </Text>
+          <Text className="mb20">
             <FormattedMessage
-              defaultMessage="If this is not provided now, your deposited funds will remain
+              defaultMessage="Paste your chosen address here to include it in the copy/paste CLI
+            command below:"
+            />
+          </Text>
+          <AddressInputContainer className="mb40">
+            <AddressInput
+              onChange={handleAddressChange}
+              value={withdrawalAddress}
+              placeholder="0x..."
+              maxLength={42}
+            />
+            <AddressIndicator>{addressIndicatorEmoji}</AddressIndicator>
+          </AddressInputContainer>
+          <Alert variant="error">
+            {isValidWithdrawalAddress ? (
+              <FormattedMessage
+                defaultMessage="Make sure you have control over this address as this cannot be changed.
+              Providing an account from a centralized exchange is not recommended."
+              />
+            ) : (
+              <FormattedMessage
+                defaultMessage="If this is not provided now, your deposited funds will remain
               locked on the Beacon Chain until an address is provided. Unlocking
               will require signing a message with your withdrawal keys,
               generated from your mnemonic seed phrase (so keep it safe)."
-            />
-          )}
-        </Alert>
-      </Paper>
+              />
+            )}
+          </Alert>
+        </Paper>
+      )}
       <Paper className="mt20">
         <Heading level={2} size="small" color="blueMedium">
           <FormattedMessage defaultMessage="What is your current operating system?" />

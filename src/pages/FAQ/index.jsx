@@ -21,7 +21,7 @@ const FAQStyles = styled.div`
     text-decoration: none;
   }
   ul {
-    color: ${p => p.theme.blue.dark};
+    color: white;
     font-family: 'inherit';
   }
 `;
