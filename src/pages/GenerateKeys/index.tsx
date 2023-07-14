@@ -52,7 +52,6 @@ const osMapping: { [os: number]: 'mac' | 'linux' | 'windows' } = {
 
 export enum keysTool {
   'CLI',
-  'GUI',
   'CLISOURCE',
 }
 
@@ -143,7 +142,7 @@ const _GenerateKeysPage = ({
   const [withdrawalAddress, setWithdrawalAddress] = useState<string>('');
 
   // Default to CLI on mainnet for now, once we have more confidence in it, switch to GUI as default.
-  const defaultKeysTool = IS_MAINNET ? keysTool.CLI : keysTool.GUI;
+  const defaultKeysTool = IS_MAINNET ? keysTool.CLI : keysTool.CLI;
   const [chosenTool, setChosenTool] = useState<keysTool>(defaultKeysTool);
 
   const onCheckboxClick = (e: any) => {
@@ -285,7 +284,7 @@ const _GenerateKeysPage = ({
           <FormattedMessage defaultMessage="Save the key files and get the validator file ready" />
         </Heading>
         <Text className="mt20">
-          {chosenTool === keysTool.GUI ? (
+          {false ? (
             <FormattedMessage
               defaultMessage="You should now have your mnemonic written down in a safe place and a
               keystore saved for each of your {validatorCount} validators. Please

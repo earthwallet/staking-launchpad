@@ -12,7 +12,7 @@ export const AcknowledgementSection = ({ title, children }: Props) => {
     <PaperGroup className="mt20">
       <Paper error pad="medium">
         <div className="flex">
-          <Heading level={3} size="small" color="error" margin="none">
+          <Heading level={3} size="small" color="white" margin="none">
             {title}
           </Heading>
         </div>

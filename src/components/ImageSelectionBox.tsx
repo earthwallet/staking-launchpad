@@ -26,7 +26,7 @@ const LogoBackground = styled.div<LogoBackgroundProps>`
   }
 `;
 
-const SelectionText = styled(Heading)`
+const SelectionText = styled(Heading as any)`
   text-align: center;
   margin-top: 24px;
   margin-bottom: 24px;

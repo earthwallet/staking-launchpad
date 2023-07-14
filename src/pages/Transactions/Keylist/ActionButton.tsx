@@ -24,14 +24,14 @@ const Container = styled.div`
   border-radius: 4px;
   cursor: pointer;
   :hover {
-    background: ${p => p.theme.gray.light};
+    background: ${p => p.theme.gray.dark};
     box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.15);
     transition: transform 0.1s;
     transform: scale(1.02);
   }
 `;
 
-const ButtonText = styled(Text)`
+const ButtonText = styled(Text as any)`
   line-height: inherit;
   font-size: 16px;
   text-align: center;

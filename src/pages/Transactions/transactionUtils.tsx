@@ -4,10 +4,10 @@ import Web3 from 'web3';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { SendOptions } from 'web3-eth-contract';
 import { prefix0X } from '../../utils/prefix0x';
-import { contractAbi } from '../../contractAbi';
 import { TransactionStatus } from '../../store/actions/depositFileActions';
 import { CONTRACT_ADDRESS, PRICE_PER_VALIDATOR } from '../../utils/envVars';
 import { DepositKeyInterface } from '../../store/reducers';
+import { stakingControllerAbi } from '../../stakingControllerAbi';
 
 const pricePerValidator = new BigNumber(PRICE_PER_VALIDATOR);
 const TX_VALUE = pricePerValidator.multipliedBy(1e18).toNumber();
@@ -67,7 +67,10 @@ export const handleMultipleTransactions = async (
 ) => {
   const walletProvider: any = await (connector as AbstractConnector).getProvider();
   const web3: any = new Web3(walletProvider);
-  const contract = new web3.eth.Contract(contractAbi, CONTRACT_ADDRESS);
+  const contract = new web3.eth.Contract(
+    stakingControllerAbi,
+    CONTRACT_ADDRESS
+  );
 
   const transactionParameters: SendOptions = {
     // gasLimit: '0x124f8', TODO set gas limit
@@ -100,9 +103,8 @@ export const handleMultipleTransactions = async (
   updateTransactionStatus(pubkey, TransactionStatus.PENDING);
 
   contract.methods
-    .deposit(
+    .stakeNode(
       prefix0X(pubkey),
-      prefix0X(withdrawal_credentials),
       prefix0X(signature),
       prefix0X(deposit_data_root)
     )
