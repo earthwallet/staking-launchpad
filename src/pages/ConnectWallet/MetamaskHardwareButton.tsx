@@ -13,7 +13,7 @@ const Logo = styled.img`
   margin: 24px;
 `;
 
-const StyledText = styled(Text)`
+const StyledText = styled(Text as any)`
   margin: 10px;
   font-size: 14px;
   margin-inline-end: 20px;

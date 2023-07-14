@@ -68,7 +68,7 @@ const ButtonContainer = styled.div`
   gap: 10px;
 `;
 
-const PaddedButtonContainer = styled(ButtonContainer)`
+const PaddedButtonContainer = styled(ButtonContainer as any)`
   padding: 30px;
 `;
 

@@ -36,7 +36,7 @@ const Arrow = styled(props => <FormPrevious {...props} />)`
 
 const SubTextContainer = styled.div``;
 
-const BackText = styled(Text)`
+const BackText = styled(Text as any)`
   margin-top: -25px;
   cursor: pointer;
   :hover {
@@ -53,7 +53,7 @@ const FakeLink = styled.span`
   display: inline;
 `;
 
-const ButtonLink = styled(FakeLink)`
+const ButtonLink = styled(FakeLink as any)`
   text-decoration: none;
   width: fit-content;
   button {

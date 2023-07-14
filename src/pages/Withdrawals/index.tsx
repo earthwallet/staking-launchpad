@@ -68,13 +68,13 @@ const ComponentStyles = styled.div`
   }
 `;
 
-const SectionTitle = styled(Heading)`
+const SectionTitle = styled(Heading as any)`
   margin-top: 30px;
   border-bottom: 1px solid lightgray;
   padding-bottom: 10px;
 `;
 
-const SubSectionTitle = styled(SectionTitle)`
+const SubSectionTitle = styled(SectionTitle as any)`
   border-bottom: 0;
 `;
 

@@ -92,12 +92,14 @@ const DotBox = styled(Box)`
   display: flex;
   margin-bottom: 20px;
   gap: 10px;
+  flex-direction: row;
 `;
 
 const DotDropdownBox = styled(Box)`
   display: flex;
   margin-inline-end: 20px;
   gap: 10px;
+  flex-direction: row;
 `;
 
 const DotDropdown = styled(DropButton)`
@@ -121,7 +123,8 @@ const DropdownLink = styled(Link)`
 const Card = styled.div``;
 
 const NetworkInfo = styled.div`
-  background: ${p => p.theme.gray.light};
+  background: ${p => p.theme.gray.dark};
+  color: white;
   padding: 32px;
 `;
 
@@ -130,7 +133,7 @@ const NavLinksRight = styled.div`
   align-items: center;
 `;
 
-const BarLinkText = styled(Heading)`
+const BarLinkText = styled(Heading as any)`
   :not(.no-padding) {
     padding: 0 12px;
     white-space: nowrap;
@@ -329,13 +332,13 @@ const _AppBar = ({ location }: RouteComponentProps) => {
         )}
         {mobile && (
           <Link to={routesEnum.languagesPage} className="mx10">
-            <Language color="black" />
+            <Language color="white" />
           </Link>
         )}
         {mobile && (
           <ValidatorDropdown
             className="secondary-link"
-            label={<Menu color="black" />}
+            label={<Menu color="white" />}
             dropAlign={{ top: 'bottom', right: dropAlignInline }}
             dropContent={
               <Card>
@@ -364,7 +367,11 @@ const _AppBar = ({ location }: RouteComponentProps) => {
                     </em>
                   </Text>
                 </NetworkInfo>
-                <Box pad="large" className="mt0">
+                <Box
+                  style={{ background: '#4A4A4A' }}
+                  pad="large"
+                  className="mt0"
+                >
                   <DropdownLink to={routesEnum.FaqPage}>
                     <FormattedMessage defaultMessage="FAQ" />
                   </DropdownLink>

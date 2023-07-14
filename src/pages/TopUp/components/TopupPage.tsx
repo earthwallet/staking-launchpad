@@ -87,7 +87,7 @@ const TopUpDetailsContainer = styled.div`
   }
 `;
 
-const IndentedText = styled(Text)`
+const IndentedText = styled(Text as any)`
   margin-inline-start: 10px;
 `;
 
@@ -196,13 +196,14 @@ const TopupPage: React.FC<Props> = ({ validator }) => {
 
   const showAlert = React.useMemo(() => {
     return (
-      balanceAfterTopup > PRICE_PER_VALIDATOR || balance > PRICE_PER_VALIDATOR
+      balanceAfterTopup > Number(PRICE_PER_VALIDATOR) ||
+      balance > Number(PRICE_PER_VALIDATOR)
     );
   }, [balance, balanceAfterTopup]);
 
   const alertText = React.useMemo(() => {
     // If EB already maxed out
-    if (effectiveBalance >= PRICE_PER_VALIDATOR)
+    if (effectiveBalance >= Number(PRICE_PER_VALIDATOR))
       return formatMessage(
         {
           defaultMessage:
@@ -213,7 +214,7 @@ const TopupPage: React.FC<Props> = ({ validator }) => {
         { TICKER_NAME, minTopupValue }
       );
     // If EB is low (31 or less)
-    if (balance > PRICE_PER_VALIDATOR)
+    if (balance > Number(PRICE_PER_VALIDATOR))
       return formatMessage(
         {
           defaultMessage:

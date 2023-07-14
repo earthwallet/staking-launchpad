@@ -31,7 +31,7 @@ import { MetamaskHardwareButton } from '../../ConnectWallet/MetamaskHardwareButt
 import { useKeyPress } from '../../../hooks/useKeyPress';
 import useIntlNetworkName from '../../../hooks/useIntlNetworkName';
 
-const CloseButton = styled(NakedButton)`
+const CloseButton = styled(NakedButton as any)`
   padding: 1rem;
   align-self: flex-end;
 `;
