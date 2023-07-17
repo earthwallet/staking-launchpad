@@ -273,9 +273,6 @@
   "2rflCq": {
     "message": "Client diversity is extremely important for the network health of Ethereum: A bug in a client with a share of over 33% can cause Ethereum to go offline. If the client has a supermajority (>66%), a bug could cause the chain to incorrectly split, potentially leading to slashing."
   },
-  "2t/3ab": {
-    "message": "The other file you just generated is {depositDataJson}. This file contains the public key(s) associated with your validator(s); You will need to upload this in the next step."
-  },
   "32rBNK": {
     "message": "Terms of Service"
   },
@@ -442,9 +439,6 @@
   },
   "793QlI": {
     "message": "{title} is not supported in offline mode."
-  },
-  "7D453L": {
-    "message": "Upload deposit data 2 of 2"
   },
   "7DFXQj": {
     "message": "Switch to {oppositeNetwork} launchpad"
@@ -1026,9 +1020,6 @@
   "IJw06E": {
     "message": "Sign transaction with your wallet"
   },
-  "ISXrvR": {
-    "message": "Upload deposit data 1 of 2"
-  },
   "IWlazt": {
     "message": "full withdrawal"
   },
@@ -1327,6 +1318,9 @@
   "NkFxlX": {
     "message": "At least {time} (four epochs) from the current epoch before reaching the exit epoch (with no others in the queue, {highlyVariable})"
   },
+  "Nn/D40": {
+    "message": "Create Earth Node"
+  },
   "NwzcYT": {
     "message": "Teku needs to be pointed at files containing keystores and their associated passwords at startup. There are 3 methods for doing so."
   },
@@ -1350,6 +1344,9 @@
   },
   "OJOu1W": {
     "message": "Documentation on running Erigon"
+  },
+  "OKQQ4L": {
+    "message": "Generate key pair"
   },
   "ON2tXT": {
     "message": "The Nethermind documentation explains how to download and install the client."
@@ -1454,6 +1451,9 @@
   },
   "QeE86m": {
     "message": "Check this document to learn how to run a node on {networkName}"
+  },
+  "QjhLkO": {
+    "message": "The other files you just generated are {depositDataJson} {depositDataJson2}. These file contains the public key(s) associated with your validator(s); You will need to upload this in the next steps to join the Earth Ether staking protocol."
   },
   "QlsDcr": {
     "message": "Action"
@@ -1977,9 +1977,6 @@
   "cU/ZP6": {
     "message": "Ethereum uses proof-of-stake to reach consensus."
   },
-  "cXHsYt": {
-    "message": "Wait 3 hours"
-  },
   "cav520": {
     "message": "Download from GitHub"
   },
@@ -2133,6 +2130,9 @@
   },
   "g/DxI7": {
     "message": "Moreover, you can set your Validator Client (VC) and Beacon Node (BN) on separate machines and IPs so that even if your beacon node is vulnerable, your keystore is stored on a different machine."
+  },
+  "g2kTRg": {
+    "message": "Upload Deposit Data"
   },
   "g37XKP": {
     "message": "More on virtualenv"
@@ -2547,6 +2547,9 @@
   "nW+xcT": {
     "message": "Erigon documentation"
   },
+  "nWzc7h": {
+    "message": "Begin Staking"
+  },
   "nZTFTz": {
     "message": "I understand that there is no advantage to depositing more than once per validator. Any extra {TICKER_NAME} sent in a duplicate deposit will not be counted in my effective validator balance and I will not be able to withdraw it."
   },
@@ -2914,9 +2917,6 @@
   },
   "uYF99H": {
     "message": "Although a validator's vote is weighted by the amount it has at stake, each validators voting weight starts at, and is capped at {PRICE_PER_VALIDATOR}. It is possible to drop below this with poor node performance, but it is not possible to raise above it."
-  },
-  "ubKWX8": {
-    "message": "Generate key pairs"
   },
   "uhapiE": {
     "message": "Ensure your bandwidth can't be throttled and isn't capped so your node stays in sync and will be ready to validate when called."

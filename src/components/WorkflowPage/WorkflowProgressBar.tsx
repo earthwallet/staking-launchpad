@@ -61,7 +61,7 @@ export const WorkflowProgressBar = ({ workflow }: Props): JSX.Element => {
     },
     {
       step: WorkflowStep.UPLOAD_VALIDATOR_FILE,
-      text: formatMessage({ defaultMessage: 'Upload deposit data 1 of 2' }),
+      text: formatMessage({ defaultMessage: 'Upload Deposit Data' }),
     },
     {
       step: WorkflowStep.CONNECT_WALLET,
@@ -69,11 +69,11 @@ export const WorkflowProgressBar = ({ workflow }: Props): JSX.Element => {
     },
     {
       step: WorkflowStep.WAIT_3_HRS,
-      text: formatMessage({ defaultMessage: 'Wait 3 hours' }),
+      text: formatMessage({ defaultMessage: 'Create Earth Node' }),
     },
     {
       step: WorkflowStep.UPLOAD_VALIDATOR_FILE_STEP_2,
-      text: formatMessage({ defaultMessage: 'Upload deposit data 2 of 2' }),
+      text: formatMessage({ defaultMessage: 'Begin Staking' }),
     },
     {
       step: WorkflowStep.SUMMARY,

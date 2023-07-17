@@ -703,20 +703,6 @@
       "value": "Client diversity is extremely important for the network health of Ethereum: A bug in a client with a share of over 33% can cause Ethereum to go offline. If the client has a supermajority (>66%), a bug could cause the chain to incorrectly split, potentially leading to slashing."
     }
   ],
-  "2t/3ab": [
-    {
-      "type": 0,
-      "value": "The other file you just generated is "
-    },
-    {
-      "type": 1,
-      "value": "depositDataJson"
-    },
-    {
-      "type": 0,
-      "value": ". This file contains the public key(s) associated with your validator(s); You will need to upload this in the next step."
-    }
-  ],
   "32rBNK": [
     {
       "type": 0,
@@ -1249,12 +1235,6 @@
     {
       "type": 0,
       "value": " is not supported in offline mode."
-    }
-  ],
-  "7D453L": [
-    {
-      "type": 0,
-      "value": "Upload deposit data 2 of 2"
     }
   ],
   "7DFXQj": [
@@ -2699,12 +2679,6 @@
       "value": "Sign transaction with your wallet"
     }
   ],
-  "ISXrvR": [
-    {
-      "type": 0,
-      "value": "Upload deposit data 1 of 2"
-    }
-  ],
   "IWlazt": [
     {
       "type": 0,
@@ -3441,6 +3415,12 @@
       "value": ")"
     }
   ],
+  "Nn/D40": [
+    {
+      "type": 0,
+      "value": "Create Earth Node"
+    }
+  ],
   "NwzcYT": [
     {
       "type": 0,
@@ -3511,6 +3491,12 @@
     {
       "type": 0,
       "value": "Documentation on running Erigon"
+    }
+  ],
+  "OKQQ4L": [
+    {
+      "type": 0,
+      "value": "Generate key pair"
     }
   ],
   "ON2tXT": [
@@ -3835,6 +3821,28 @@
     {
       "type": 1,
       "value": "networkName"
+    }
+  ],
+  "QjhLkO": [
+    {
+      "type": 0,
+      "value": "The other files you just generated are "
+    },
+    {
+      "type": 1,
+      "value": "depositDataJson"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "depositDataJson2"
+    },
+    {
+      "type": 0,
+      "value": ". These file contains the public key(s) associated with your validator(s); You will need to upload this in the next steps to join the Earth Ether staking protocol."
     }
   ],
   "QlsDcr": [
@@ -5177,12 +5185,6 @@
       "value": "Ethereum uses proof-of-stake to reach consensus."
     }
   ],
-  "cXHsYt": [
-    {
-      "type": 0,
-      "value": "Wait 3 hours"
-    }
-  ],
   "cav520": [
     {
       "type": 0,
@@ -5599,6 +5601,12 @@
     {
       "type": 0,
       "value": "Moreover, you can set your Validator Client (VC) and Beacon Node (BN) on separate machines and IPs so that even if your beacon node is vulnerable, your keystore is stored on a different machine."
+    }
+  ],
+  "g2kTRg": [
+    {
+      "type": 0,
+      "value": "Upload Deposit Data"
     }
   ],
   "g37XKP": [
@@ -6663,6 +6671,12 @@
       "value": "Erigon documentation"
     }
   ],
+  "nWzc7h": [
+    {
+      "type": 0,
+      "value": "Begin Staking"
+    }
+  ],
   "nZTFTz": [
     {
       "type": 0,
@@ -7723,12 +7737,6 @@
     {
       "type": 0,
       "value": ". It is possible to drop below this with poor node performance, but it is not possible to raise above it."
-    }
-  ],
-  "ubKWX8": [
-    {
-      "type": 0,
-      "value": "Generate key pairs"
     }
   ],
   "uhapiE": [

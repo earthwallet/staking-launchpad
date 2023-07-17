@@ -131,7 +131,7 @@ const _GenerateKeysPage = ({
   workflow,
 }: Props): JSX.Element => {
   const { formatMessage } = useIntl();
-  const [validatorCount, setValidatorCount] = useState<number | string>(0);
+  const [validatorCount, setValidatorCount] = useState<number | string>(1);
   const [
     mnemonicAcknowledgementChecked,
     setMnemonicAcknowledgementChecked,
@@ -184,7 +184,7 @@ const _GenerateKeysPage = ({
 
   return (
     <WorkflowPageTemplate
-      title={formatMessage({ defaultMessage: 'Generate key pairs' })}
+      title={formatMessage({ defaultMessage: 'Generate key pair' })}
     >
       <Paper>
         <Heading level={2} size="small" color="blueMedium">
@@ -195,7 +195,11 @@ const _GenerateKeysPage = ({
             <Text className="mb5">
               <FormattedMessage defaultMessage="Validators" />
             </Text>
-            <NumberInput value={validatorCount} setValue={setValidatorCount} />
+            <NumberInput
+              disabled
+              value={validatorCount}
+              setValue={setValidatorCount}
+            />
           </div>
           <div>
             <Text className="mb5">Cost</Text>
@@ -319,12 +323,11 @@ const _GenerateKeysPage = ({
         </InstructionImgContainer>
         <Text>
           <FormattedMessage
-            defaultMessage="The other file you just generated is
-            {depositDataJson}. This file contains the
-            public key(s) associated with your validator(s); You will need to
-            upload this in the next step."
+            defaultMessage="The other files you just generated are
+            {depositDataJson} {depositDataJson2}. These file contains the public key(s) associated with your validator(s); You will need to upload this in the next steps to join the Earth Ether staking protocol."
             values={{
-              depositDataJson: <Highlight>deposit_data.json</Highlight>,
+              depositDataJson: <Highlight>1-deposit_data.json</Highlight>,
+              depositDataJson2: <Highlight>2-deposit_data.json</Highlight>,
             }}
           />
         </Text>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FormDown, FormUp } from 'grommet-icons';
+import { Text } from '../../components/Text';
 
 const StyledButton = styled.button`
   height: 25px;
@@ -54,12 +55,14 @@ interface Props {
   value: number | string;
   setValue: (e: number) => void;
   allowDecimals?: boolean;
+  disabled?: boolean;
 }
 
 export const NumberInput = ({
   value,
   setValue,
   allowDecimals,
+  disabled,
 }: Props): JSX.Element => {
   const handleManualInput = (e: any) => {
     const val = e.target.value;
@@ -71,27 +74,33 @@ export const NumberInput = ({
   };
 
   const decrement = () => {
-    if (value > 0) setValue(+value - 1);
+    if (Number(value) > 0) setValue(+value - 1);
   };
 
   const increment = () => setValue(+value + 1);
 
   return (
     <div className="flex">
-      <StyledInput
-        onChange={handleManualInput}
-        value={value}
-        type={allowDecimals ? 'number' : 'tel'}
-        pattern="^-?[0-9]\d*\.?\d*$"
-      />
-      <ButtonContainer>
-        <StyledButton onClick={increment} style={{ borderBottom: 'none' }}>
-          <FormUp size="medium" />
-        </StyledButton>
-        <StyledButton className="plus" onClick={decrement}>
-          <FormDown size="medium" />
-        </StyledButton>
-      </ButtonContainer>
+      {disabled ? (
+        <Text>{value}</Text>
+      ) : (
+        <StyledInput
+          onChange={disabled ? console.log : handleManualInput}
+          value={value}
+          type={allowDecimals ? 'number' : 'tel'}
+          pattern="^-?[0-9]\d*\.?\d*$"
+        />
+      )}
+      {!disabled && (
+        <ButtonContainer>
+          <StyledButton onClick={increment} style={{ borderBottom: 'none' }}>
+            <FormUp size="medium" />
+          </StyledButton>
+          <StyledButton className="plus" onClick={decrement}>
+            <FormDown size="medium" />
+          </StyledButton>
+        </ButtonContainer>
+      )}
     </div>
   );
 };

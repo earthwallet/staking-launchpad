@@ -107,7 +107,7 @@
   },
   "scripts": {
     "start": "rescripts start",
-    "start:goerli": "REACT_APP_IS_MAINNET=false REACT_APP_PRICE_PER_VALIDATOR=3 REACT_APP_CONTRACT_ADDRESS=0xd137d1f936b7fa4d885d1ed1901f9388ec9fa166 rescripts start",
+    "start:goerli": "REACT_APP_IS_MAINNET=false REACT_APP_PRICE_PER_VALIDATOR=3 REACT_APP_CONTRACT_ADDRESS=0x0190DD210DDacEA1323edBB69ca135F4a74d6b11 REACT_APP_GENESIS_FORK_VERSION=0x00001020 rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
     "eject": "rescripts eject",
