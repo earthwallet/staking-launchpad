@@ -1576,6 +1576,9 @@
   "THIzw6": {
     "message": "Validators and Ethereum"
   },
+  "TJNz5y": {
+    "message": "Install python3.10"
+  },
   "TKCr16": {
     "message": "This full withdraw of funds requires that a withdrawal address be set, and will be automatically transferred in the next validator sweep."
   },
@@ -3041,9 +3044,6 @@
   },
   "xZZMZ5": {
     "message": "testnet"
-  },
-  "xbet2w": {
-    "message": "Install python3.7+"
   },
   "xh7oVn": {
     "message": "Those looking to exit their validator from staking and withdrawal their ETH should check out the guide below that matches your setup:"

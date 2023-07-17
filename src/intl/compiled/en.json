@@ -4161,6 +4161,12 @@
       "value": "Validators and Ethereum"
     }
   ],
+  "TJNz5y": [
+    {
+      "type": 0,
+      "value": "Install python3.10"
+    }
+  ],
   "TKCr16": [
     {
       "type": 0,
@@ -8029,12 +8035,6 @@
     {
       "type": 0,
       "value": "testnet"
-    }
-  ],
-  "xbet2w": [
-    {
-      "type": 0,
-      "value": "Install python3.7+"
     }
   ],
   "xh7oVn": [
