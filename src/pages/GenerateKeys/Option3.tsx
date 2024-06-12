@@ -153,7 +153,7 @@ export const Option3 = ({
       return (
         <Pre className="my0">
           python3 ./staking_deposit/deposit.py new-mnemonic{' '}
-          {validatorCount > 0
+          {Number(validatorCount) > 0
             ? `--${
                 TRANSLATE_CLI_FLAGS
                   ? formatMessage({
@@ -190,7 +190,7 @@ export const Option3 = ({
       return (
         <Pre className="my0">
           .\staking_deposit\deposit.py new-mnemonic{' '}
-          {validatorCount > 0
+          {Number(validatorCount) > 0
             ? `--${
                 TRANSLATE_CLI_FLAGS
                   ? formatMessage({
@@ -220,7 +220,7 @@ export const Option3 = ({
         <FormattedMessage defaultMessage="Build deposit-cli from the Python source code" />
       </Heading>
       <Heading level={4} size="small" color="blueMedium" className="mb10">
-        <FormattedMessage defaultMessage="Install python3.7+" />
+        <FormattedMessage defaultMessage="Install python3.10" />
       </Heading>
       <Text>{renderPythonInstructions()}</Text>
       <Text>

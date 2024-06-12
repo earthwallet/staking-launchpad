@@ -166,57 +166,6 @@ export const Option1 = ({
               } ${withdrawalAddress}`}
           </Pre>
         </Alert>
-        <Alert variant="secondary" className="my10">
-          <Pre className="my10" style={{ color: colors.red.medium }}>
-            {(os === 'linux' || os === 'mac') && './deposit '}
-            {os === 'windows' && (
-              <>
-                <span>.\deposit</span>
-                <span style={{ color: colors.purple.dark }}>.exe </span>
-              </>
-            )}
-            existing-mnemonic{' '}
-            {Number(validatorCount) > 0
-              ? `--${
-                  TRANSLATE_CLI_FLAGS
-                    ? formatMessage({
-                        defaultMessage: 'num_validators',
-                        description:
-                          'this is used as a command line flag, short for "number of validators"',
-                      })
-                    : 'num_validators'
-                } ${validatorCount}`
-              : ''}{' '}
-            {Number(validatorCount) > 0
-              ? `--${
-                  TRANSLATE_CLI_FLAGS
-                    ? formatMessage({
-                        defaultMessage: 'amount',
-                        description:
-                          'this is used as a command line flag, short for "amount"',
-                      })
-                    : 'amount'
-                } ${Number(validatorCount) * 29}`
-              : ''}{' '}
-            {`--${
-              TRANSLATE_CLI_FLAGS
-                ? formatMessage({
-                    defaultMessage: 'chain',
-                    description: 'this is used as a command line flag',
-                  })
-                : 'chain'
-            } ${NETWORK_NAME.toLowerCase()}`}{' '}
-            {withdrawalAddress &&
-              `--${
-                TRANSLATE_CLI_FLAGS
-                  ? formatMessage({
-                      defaultMessage: 'eth1_withdrawal_address',
-                      description: 'this is used as a command line flag',
-                    })
-                  : 'eth1_withdrawal_address'
-              } ${withdrawalAddress}`}
-          </Pre>
-        </Alert>
         <Alert variant="error" className="my20">
           <Text>
             <FormattedMessage
